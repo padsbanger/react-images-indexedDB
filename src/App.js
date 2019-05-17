@@ -38,6 +38,7 @@ export default class App extends React.Component {
   handleImageUpload = (event) => {
     const filesToUpload = Array.from(event.target.files);
     filesToUpload.forEach(this.handleAddToDB.bind(this));
+    return null;
   }
 
   handleAddToDB(file) {
